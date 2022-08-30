@@ -12,6 +12,12 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-
+    <StackPanel 
+        VerticalAlignment="Center" 
+        HorizontalAlignment="Center">
+        <TextBlock Name="MainText" Text="Tavmamm" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Name="MainButton" Tapped="MainButton_OnTapped" Content="Click Me"/>
+    </StackPanel>
+    
+    
 </Window>
