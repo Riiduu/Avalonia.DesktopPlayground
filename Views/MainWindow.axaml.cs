@@ -1,4 +1,6 @@
+using System;
 using Avalonia.Controls;
+using Avalonia.Interactivity;
 
 namespace Avalonia.DesktopPlayground.Views
 {
@@ -7,6 +9,12 @@ namespace Avalonia.DesktopPlayground.Views
         public MainWindow()
         {
             InitializeComponent();
+
+        }
+
+        private void InputElement_OnTapped(object? sender, RoutedEventArgs e)
+        {
+            MainText.Text = "gejs";
         }
     }
 }
